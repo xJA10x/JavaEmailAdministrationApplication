@@ -57,6 +57,10 @@ public class Email {
     // Outputs to the console.
     System.out.println("Department: " + this.department);
 
+    // Method call.
+    // Method that returns a random password.
+
+
   }
 
   // Ask for the deparment.
@@ -103,7 +107,36 @@ public class Email {
 
   }
 
-  // Generate a random password.
+  // Builds private method.
+  // Takes one parameter,
+  // how long a password should be.
+  // Generates a random password.
+  private String randomPassword(int length) {
+
+    // Initializes variable.
+    String passwordSet = "ABCDEFGIJKLMNOPQRSTUWXYZ0123456789!@#$%";
+    // Initializes array.
+    char[] password = new char[length];
+
+    // Builds for loop.
+    // Iterates through the value of length.
+    for(int i = 0; i < length; i++) {
+
+
+
+    }
+
+
+
+    // Generates a random password.
+
+
+
+
+
+
+
+  }
 
   // Set the mailbox capacity.
 
