@@ -29,6 +29,7 @@ public class Email {
   private String department;
   private String altenateEmail;
   private int mailboxCapacity;
+  private int defaultPasswordLength;
 
   // Buidls constructor.
   // Takes two parameters,
@@ -58,8 +59,13 @@ public class Email {
     System.out.println("Department: " + this.department);
 
     // Method call.
+    // Takes one parameter,
+    // global private variable defaultPasswordLength.
+    // Stores output in the variable password.
     // Method that returns a random password.
-
+    this.password = randomPassword(defaultPasswordLength);
+    // Outputs to the console.
+    System.out.println("Your password is : " + this.password);
 
   }
 
@@ -122,19 +128,26 @@ public class Email {
     // Iterates through the value of length.
     for(int i = 0; i < length; i++) {
 
+      // Method call
+      // using object name.
+      // Takes one parameter.
+      // Type cast as an integer and multiplies by
+      // the length of the password.
+      // Generates random number.
+      // Stores output in the variable rand.
+      int rand = (int)(Math.random() * passwordSet.length());
+
+      // Method call
+      // using object name.
+      // Takes one parameter,
+      // stores output in the array password.
+      password[i] = passwordSet.charAt(rand);
 
 
     }
 
-
-
-    // Generates a random password.
-
-
-
-
-
-
+    // Returns password.
+    return new String(password);
 
   }
 
@@ -143,9 +156,6 @@ public class Email {
   // Set the alternate email.
 
   // Change the password.
-
-
-
 
 
 }
