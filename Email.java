@@ -27,9 +27,12 @@ public class Email {
   private String lastName;
   private String password;
   private String department;
+  private String email;
   private String altenateEmail;
   private int mailboxCapacity;
-  private int defaultPasswordLength;
+  // Initializes variable.
+  private int defaultPasswordLength = 10;
+  private String companySuffix = "aeycompany.com";
 
   // Buidls constructor.
   // Takes two parameters,
@@ -66,6 +69,13 @@ public class Email {
     this.password = randomPassword(defaultPasswordLength);
     // Outputs to the console.
     System.out.println("Your password is : " + this.password);
+
+    // Combine elements to generate emails.
+    // Stores output in the variable email.
+    email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
+    // Outputs to the console.
+    System.out.println("Your email is: " + email);
+
 
   }
 
