@@ -193,4 +193,34 @@ public class Email {
 
   }
 
+  // Builds method.
+  // Takes no parameters,
+  // get() method.
+  public int getMailboxCapacity() {
+
+    // Returns mailboxCapacity.
+    return mailboxCapacity;
+
+  }
+
+  // Builds method.
+  // Takes no parameters,
+  // get() method.
+  public String getAlternateEmail() {
+
+    // Returns alternateEmail.
+    return alternateEmail;
+
+  }
+
+  // Builds method.
+  // Takes no parameters,
+  // get() method.
+  public String getPassword() {
+
+    // Returns password.
+    return password;
+
+  }
+
 }
