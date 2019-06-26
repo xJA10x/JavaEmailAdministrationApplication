@@ -28,11 +28,11 @@ public class Email {
   private String password;
   private String department;
   private String email;
-  private String altenateEmail;
-  private int mailboxCapacity;
+  private String alternateEmail;
   // Initializes variable.
   private int defaultPasswordLength = 10;
   private String companySuffix = "aeycompany.com";
+  private int mailboxCapacity = 500;
 
   // Buidls constructor.
   // Takes two parameters,
@@ -161,11 +161,36 @@ public class Email {
 
   }
 
-  // Set the mailbox capacity.
+  // Builds method.
+  // Takes one parameter,
+  // sets the mailbox capacity.
+  public void setMailboxCapacity(int capacity) {
 
-  // Set the alternate email.
+    // Stores input in the
+    // variable mailboxCapacity.
+    this.mailboxCapacity = capacity;
+  }
 
-  // Change the password.
+  // Builds method.
+  // Takes one parameter,
+  // sets the alternate email.
+  public void setAlternateEmail(String altEmail) {
 
+    // Stores input in
+    // the variable altEmail.
+    this.alternateEmail = altEmail;
+
+  }
+
+  // Builds method.
+  // Takes one parameter,
+  // changes the password.
+  public void changePassword(String password) {
+
+    // Stores input in the variable
+    // password.
+    this.password = password;
+
+  }
 
 }
