@@ -41,6 +41,21 @@ public class EmailApp {
       // Constructor takes two parameters.
       Email em1 = new Email("John", "Smith");
 
+      // Method call
+      // using object name.
+      // Takes one parameter.
+      //em1.setAlternateEmail("js@gmail.com");
+      // Method call
+      // using object name.
+      // Takes no parameters.
+      // Outputs to the console.
+      //System.out.println("Your alternate email is " + em1.getAlternateEmail());
+
+      // Method call
+      // using object name.
+      // Takes no parameters.
+      System.out.println(em1.showInfo());
+
       // Prompts user.
       System.out.print("Enter -1 to quit program: ");
       // Stores input in the variable control.

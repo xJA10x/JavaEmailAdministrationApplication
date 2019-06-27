@@ -49,17 +49,12 @@ public class Email {
     // secondName.
     this.lastName = lastName;
 
-    // Outptuts to the console.
-    System.out.println("EMAIL CREATED: " + this.firstName + " " + this.lastName);
-
     // Method call.
     // Ask for the deparment.
     // Stores input
     // in the global variable  deparment.
     // Returns the deparment.
     this.department = setDepartment();
-    // Outputs to the console.
-    System.out.println("Department: " + this.department);
 
     // Method call.
     // Takes one parameter,
@@ -73,9 +68,6 @@ public class Email {
     // Combine elements to generate emails.
     // Stores output in the variable email.
     email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
-    // Outputs to the console.
-    System.out.println("Your email is: " + email);
-
 
   }
 
@@ -93,7 +85,7 @@ public class Email {
     int deepChoice;
 
     // Prompts user.
-    System.out.print("DEPARTMENT CODES\n1 for Sales\n2 for Development\n3 for none\nEnter department code: ");
+    System.out.print("New Worker: " + firstName + ". \nEnter the Deparment Codes:\n1 for Sales\n2 for Development\n3 for none\nEnter department code: ");
     // Stores input
     // the variable deparmentChoice.
     deepChoice = input.nextInt();
@@ -220,6 +212,16 @@ public class Email {
 
     // Returns password.
     return password;
+
+  }
+
+  // Builds method.
+  // Takes no parameters.
+  public String showInfo() {
+
+    return "DISPLAY NAME: " + firstName + " " + lastName +
+          "\nCOMPANY EMAIL: " + email +
+          "\nMAILBOX CAPACITY: " + mailboxCapacity + "mb";
 
   }
 
